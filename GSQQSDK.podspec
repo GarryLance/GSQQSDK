@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/GarryLance/GSQQSDK", :tag => "3.1.0" }
+  s.source       = { :git => "https://github.com/GarryLance/GSQQSDK.git", :tag => "3.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -103,7 +103,8 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "QQSDK/TencentOpenApi_IOS_Bundle.bundle"
+  resource_bundle = { 'TencentOpenApi_IOS_Bundle' => '*' }
+  # s.resource  = "QQSDK/TencentOpenApi_IOS_Bundle.bundle"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -115,7 +116,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "QQSDK/TencentOpenAPI"
+  s.framework  = "TencentOpenAPI"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
