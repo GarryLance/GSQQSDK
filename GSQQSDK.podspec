@@ -10,7 +10,7 @@ s.ios.deployment_target = "7.0"
 s.source              = {:git => "https://github.com/GarryLance/GSQQSDK.git", :tag => s.version}
 s.frameworks          = "Security", "SystemConfiguration", "CoreGraphics", "CoreTelephony"
 s.libraries           = "iconv", "sqlite3.0", "z", 'c++'
-s.ios.vendored_frameworks = "QQSDKTencentOpenAPI.framework"
+s.ios.vendored_frameworks = "QQSDK/TencentOpenAPI.framework"
 s.resource = "QQSDK/*.{png,xib,nib,bundle}"
 s.license      =  { :type => "MIT", :file => "LICENSE" }
 end
