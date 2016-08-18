@@ -103,7 +103,8 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "QQSDK/TencentOpenApi_IOS_Bundle.bundle"
+  s.resource_bundle = "TencentOpenApi_IOS_Bundle.bundle"
+  # s.resource  = "TencentOpenApi_IOS_Bundle.bundle"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
