@@ -12,8 +12,5 @@ s.frameworks          = "Security", "SystemConfiguration", "CoreGraphics", "Core
 s.libraries           = "iconv", "sqlite3.0", "z", 'c++'
 s.ios.vendored_frameworks = "QQSDK/framework/TencentOpenAPI.framework"
 s.resource = "QQSDK/resource/*.{png,xib,nib,bundle}"
-s.license             = { :type => 'LGPL', :text => <<-LICENSE
-® 1998 - 2016 Tencent All Rights Reserved
-LICENSE
-}
+s.license      =  { :type => "MIT", :file => "LICENSE" }
 end
